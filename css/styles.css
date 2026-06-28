@@ -1,0 +1,179 @@
+:root{
+--vino:#6A1B2E;
+--dorado:#C9A227;
+--negro:#1C1C1C;
+--blanco:#FFFFFF;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:var(--negro);
+color:white;
+font-family:Segoe UI,sans-serif;
+}
+
+header{
+background:black;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:2px solid var(--dorado);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:var(--dorado);
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+}
+
+.btn{
+background:var(--vino);
+color:white;
+padding:12px 20px;
+border-radius:30px;
+text-decoration:none;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:40px;
+gap:30px;
+}
+
+.hero-text{
+width:50%;
+}
+
+.hero h1{
+font-size:48px;
+color:var(--dorado);
+margin-bottom:15px;
+}
+
+.hero p{
+margin-bottom:20px;
+font-size:20px;
+}
+
+.hero img{
+width:50%;
+border-radius:20px;
+border:2px solid var(--dorado);
+}
+
+.pantallas{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+padding:40px;
+}
+
+.card{
+width:260px;
+background:#111;
+border:1px solid var(--dorado);
+border-radius:15px;
+padding:15px;
+text-decoration:none;
+color:white;
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.card h2{
+color:var(--dorado);
+margin:10px 0;
+}
+
+footer{
+background:black;
+padding:20px;
+text-align:center;
+border-top:2px solid var(--dorado);
+}
+
+.contenedor{
+max-width:700px;
+margin:50px auto;
+background:#111;
+padding:30px;
+border-radius:20px;
+border:1px solid var(--dorado);
+}
+
+.contenedor h1{
+color:var(--dorado);
+text-align:center;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+background:#222;
+color:white;
+border:1px solid var(--dorado);
+border-radius:10px;
+}
+
+button{
+background:var(--vino);
+color:white;
+padding:12px;
+width:100%;
+border:none;
+border-radius:20px;
+cursor:pointer;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid var(--dorado);
+padding:10px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+.hero{
+flex-direction:column;
+}
+
+.hero-text{
+width:100%;
+text-align:center;
+}
+
+.hero img{
+width:100%;
+}
+
+}
